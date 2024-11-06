@@ -1,0 +1,57 @@
+{
+  "name": "end-to-end-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "xo && playwright test",
+    "playwright:test": "xo && playwright test",
+    "xo": "xo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.32.3",
+    "@types/lodash": "^4.14.194",
+    "@types/uuid": "^10.0.0",
+    "playwright-ctrf-json-reporter": "^0.0.14",
+    "typescript": "latest",
+    "xo": "^0.54.1",
+    "checkly": "latest",
+    "ts-node": "latest"
+  },
+  "xo": {
+    "rules": {
+      "@typescript-eslint/object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "import/extensions": [
+        "error",
+        "never"
+      ],
+      "unicorn/filename-case": [
+        "error",
+        {
+          "cases": {
+            "camelCase": true,
+            "pascalCase": true
+          }
+        }
+      ]
+    },
+    "space": true
+  },
+  "dependencies": {
+    "@percy/cli": "^1.29.4",
+    "@percy/playwright": "^1.0.4",
+    "dotenv": "^16.0.3",
+    "process": "^0.11.10",
+    "sdk-utils": "^1.0.174",
+    "ts-node": "^10.9.2",
+    "unicorn": "^0.0.1",
+    "uuid": "^10.0.0"
+  }
+}
