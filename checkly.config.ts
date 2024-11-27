@@ -31,13 +31,14 @@ const config = defineConfig({
       use: {},
       timeout: 900_000,
     },
-    browserChecks: {
-      tags: ['checkly'],
-      /* A glob pattern matches any Playwright .spec.ts files and automagically creates a Browser Check. This way, you
-      * can just write native Playwright code. See https://www.checklyhq.com/docs/cli/using-check-test-match/
-      * */
-      testMatch: '**/tests/**/*.spec.ts',
-    },
+    // Don't use browserChecks directly
+    //  browserChecks: {
+    //   tags: ['checkly'],
+    //   /* A glob pattern matches any Playwright .spec.ts files and automagically creates a Browser Check. This way, you
+    //   * can just write native Playwright code. See https://www.checklyhq.com/docs/cli/using-check-test-match/
+    //   * */
+    //   testMatch: '**/tests/**/*.spec.ts',
+    // },
   },
   cli: {
     /* The default datacenter location to use when running npx checkly test */

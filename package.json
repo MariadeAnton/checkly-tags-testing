@@ -23,6 +23,9 @@
     "ts-node": "latest"
   },
   "xo": {
+    "ignores": [
+      "__checks__/test.check.ts"
+    ],
     "rules": {
       "@typescript-eslint/object-curly-spacing": [
         "error",
