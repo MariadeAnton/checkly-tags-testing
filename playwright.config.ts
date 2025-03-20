@@ -51,7 +51,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer and https://playwright.dev/docs/api/class-testoptions#test-options-trace */
     // trace: 'on',
-    trace: 'on-first-retry',
+    trace: 'on',
 
     ...(process.env.LAUNCH_WITH_DEVTOOLS && {
       launchOptions: {
@@ -63,8 +63,12 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'Chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
       grep: [/@checkly/],
-      name: 'chromium',
+      name: 'Checkly tagged',
       use: { ...devices['Desktop Chrome'] },
     },
 

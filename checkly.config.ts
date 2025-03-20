@@ -11,19 +11,19 @@ const config = defineConfig({
   */
   logicalId: 'checkly-tags-testing',
   /* An optional URL to your Git repo */
-  repoUrl: 'https://github.com/checkly/checkly-cli',
+  repoUrl: 'https://github.com/MariadeAnton/checkly-tags-testing',
   /* Sets default values for Checks */
   checks: {
     /* A default for how often your Check should run in minutes */
     frequency: 60,
     /* Checkly data centers to run your Checks as monitors */
-    locations: ['us-east-1', 'eu-west-1'],
+    locations: ['eu-west-1'],
     /* An optional array of tags to organize your Checks */
     // tags: ['mac'],
     /** The Checkly Runtime identifier, determining npm packages and the Node.js version available at runtime.
      * See https://www.checklyhq.com/docs/cli/npm-packages/
      */
-    runtimeId: '2024.02',
+    runtimeId: '2024.09',
     /* A glob pattern that matches the Checks inside your repo, see https://www.checklyhq.com/docs/cli/using-check-test-match/ */
     checkMatch: '**/__checks__/**/*.check.ts',
     /* Global configuration option for Playwright-powered checks. See https://docs/browser-checks/playwright-test/#global-configuration */

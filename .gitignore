@@ -38,6 +38,23 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+# Build and output directories
+dist/
+out/
+coverage/
+playwright-report/
+test-results/
+results.json
+results.xml
+
+# Playwright-specific files
+trace.zip
+report/
+videos/
+screenshots/
+playwright/.cache/
+trace/
+
 # Dependency directories
 node_modules/
 jspm_packages/

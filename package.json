@@ -16,11 +16,11 @@
     "@playwright/test": "^1.32.3",
     "@types/lodash": "^4.14.194",
     "@types/uuid": "^10.0.0",
+    "checkly": "^0.0.0-pr.1042.20da986",
     "playwright-ctrf-json-reporter": "^0.0.14",
+    "ts-node": "latest",
     "typescript": "latest",
-    "xo": "^0.54.1",
-    "checkly": "latest",
-    "ts-node": "latest"
+    "xo": "^0.54.1"
   },
   "xo": {
     "ignores": [
